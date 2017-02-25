@@ -1,11 +1,12 @@
 import React from "react";
 
 export default class Layout extends React.Component {
- 
+
  render(){
   return (
     <div className="portfolio">
-      <h1 className="Title">Portfolio</h1>
+      <h1 className="sectionTitle">Portfolio</h1>
+
       <div className="twocols">
           <div className="leftcol">
             <div className="website">
@@ -32,9 +33,8 @@ export default class Layout extends React.Component {
                 </div>
               </a>
             </div>
-
-
           </div>
+
           <div className="rightcol">
             <div className="website">
                 <a href="https://samwcoding.github.io/Projects/ChuckNoris/ChuckNoris.html">
@@ -64,7 +64,7 @@ export default class Layout extends React.Component {
         </div>
         <h3 className="text-center bot"><a href="https://github.com/SamWCoding/Projects">See all of my project code</a></h3>
       </div>
-          
+
     );
   }
 }

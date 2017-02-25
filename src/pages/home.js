@@ -1,15 +1,16 @@
 import React from "react";
 
-export default class Layout extends React.Component {
- 
- 
- 
+export default class Home extends React.Component {
+
+
+
  render(){
     return (
-      <div>
-        Home page here
+      <div className="homePage">
+        <h2>I am a Developer trying to make the web an amazing place.</h2>
+
       </div>
-            
-     )
- }   
+
+    );
+ }
 }
