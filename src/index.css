@@ -1,16 +1,16 @@
 :root{
-    --p500: #5C6BC0;
-    --p700: #303f9f;
-    --p800: #283593;
-    --a700: #FFC400;
+  --p500: #5C6BC0;
+  --p700: #303f9f;
+  --p800: #283593;
+  --a700: #FFC400;
 }
 
 
 
-.navbar {
+#navbar {
   position: fixed;
+  top: 0px;
   background-color: var(--p800);
-  top: 0;
   width: 100vw;
   height: 80px;
   display: flex;
@@ -20,21 +20,24 @@
 }
 
 #siteTitle {
-    margin-right: auto;
-    margin-left: 5%;
-    color: white;
-    font-size: 40px;
+  margin-right: auto;
+  margin-left: 5%;
+  color: white;
+  font-size: 40px;
 }
 
 .menueBtn {
-    margin: 8px;
-    padding: 8px;
-    font-size: 24px;
-    align-content: center;
-    background: var(--a700);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-    color: black;
+  margin: 8px;
+  padding: 8px;
+  font-size: 24px;
+  align-content: center;
+  background: var(--a700);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .menstrip {
@@ -65,11 +68,23 @@
   margin-right: 30px;
 }
 
+
+#nav-open{
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: var(--p800);
+  z-index: 1;
+  align-items: center;
+}
+
 a.Anchor {
-    display: block;
-    position: relative;
-    top: -140px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 
 #center-stripe {
@@ -84,13 +99,13 @@ a.Anchor {
 }
 
 .about, .portfolio, .contact {
-    background: rgba(256, 256, 256, 0.9);
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-    margin: 0px 5% 20px 5%;
-    padding: 8px 5%;
-    font-size: 24px;
+  background: rgba(256, 256, 256, 0.9);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px 5% 20px 5%;
+  padding: 8px 5%;
+  font-size: 24px;
 }
 .about {
   margin-top: 20px;
@@ -98,28 +113,25 @@ a.Anchor {
 .portfolio{font-size: 16px;}
 
 .aboutText {
-    width: 60%;
-    padding: 5%;
+  width: 100%;
+  padding: 5%;
+  border: 2px solid blue;
 }
 .about .twocols{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
 }
-
 .profpic {
-    width: 80%;
-    padding: 5% 5% 5% 0%;
-    margin: auto;
-    display: flex;
-    align-content: center;
-
+  width: 50%;
+  border: 2px solid red;
 }
 
 @media screen and (max-width: 800px) {
   .about .twocols, .portfolio .twocols {
     flex-direction: column;
+    justify-content: center;
   }
   #nav-links {
     display: none;
@@ -129,40 +141,46 @@ a.Anchor {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .profpic{
+    width: 80%;
+  }
+}
+
 .sectionTitle {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .twocols {
-    display: flex;
-    align-items: top;
-    flex-flow: row;
+  display: flex;
+  align-items: top;
+  flex-flow: row;
 }
 
 .website {
   position: relative;
-    background: white;
-    margin: 5%;
-    border-radius: 10px;
-    width: 90%;
-    padding: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  margin: 5%;
+  border-radius: 10px;
+  width: 90%;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .webpic {
-    width: 100%;
-    margin-bottom: 5%;
-    border-radius: 10px;
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 10px;
 }
 
 .leftcol, .rightcol {
-    width:50%;
+  width:50%;
 
 }
 
 @media screen and (max-width: 900px) {
-    .leftcol, .rightcol {
-        width:100%;
-    }
+  .leftcol, .rightcol {
+    width:100%;
+  }
 }
