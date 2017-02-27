@@ -5,6 +5,7 @@ export default class Contact extends React.Component {
  render(){
     return (
       <div className="contact">
+        <a className="anchor" name="contact" id="contactAnchor"></a>
         <h1 className="sectionTitle">Contact</h1>
         <hr />
         <p> Hi there </p>
