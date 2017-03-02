@@ -31,7 +31,7 @@ export default class Layout extends React.Component {
               <a href="https://samwcoding.github.io/Projects/mdPreview/build/">
                 <img className="img-responsive webpic" alt="Mark Down Previewer" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/03/mdPreview.png" />
                 <div className="caption text-center">
-                  <p className="p">PMark Down Previewer</p>
+                  <p className="p">Markdown Previewer with file upload functionality</p>
                 </div>
               </a>
             </div>
