@@ -28,10 +28,10 @@ export default class Layout extends React.Component {
               </a>
             </div>
             <div className="website">
-              <a href="https://samwcoding.github.io/Projects/ConnorSite/Connor.html">
-                <img className="img-responsive webpic" alt="Profile Site for Connor Byrne" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/01/Capture.png" />
+              <a href="https://samwcoding.github.io/Projects/mdPreview/build/">
+                <img className="img-responsive webpic" alt="Mark Down Previewer" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/03/mdPreview.png" />
                 <div className="caption text-center">
-                  <p className="p">Profile Site for Connor Byrne</p>
+                  <p className="p">PMark Down Previewer</p>
                 </div>
               </a>
             </div>
@@ -47,18 +47,18 @@ export default class Layout extends React.Component {
               </a>
             </div>
             <div className="website">
-              <a href="https://samwcoding.github.io/Projects/PureCSS/PureCSS.html">
-                <img className="img-responsive webpic" alt="Portfolio of CSS work" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/01/PureCSS.png" />
-                <div className="caption text-center">
-                  <p className="p">Portfolio of images styled only with CSS</p>
-                </div>
-              </a>
-            </div>
-            <div className="website">
               <a href="https://samwcoding.github.io/Projects/Pomo-Clock/Pomo.html">
                 <img className="img-responsive webpic" alt="Pomodoro timer App" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/01/Pomo.png" />
                 <div className="caption text-center">
                   <p className="p">Pomodoro Timer functioning using Javascript</p>
+                </div>
+              </a>
+            </div>
+            <div className="website">
+              <a href="https://samwcoding.github.io/Projects/PureCSS/PureCSS.html">
+                <img className="img-responsive webpic" alt="Portfolio of CSS work" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/01/PureCSS.png" />
+                <div className="caption text-center">
+                  <p className="p">Portfolio of images styled only with CSS</p>
                 </div>
               </a>
             </div>
