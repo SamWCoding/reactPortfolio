@@ -10,8 +10,11 @@ export default class Layout extends React.Component {
         <h1 className="sectionTitle">About Me</h1>
         <div className="twocols">
           <div className="aboutText">
-            <h3> Front end developer and UX/UI designer, with experience in Data analytics, visualisation, machine learning and project management. Always striving to learn and develop. </h3>
-            <h2> Web Developer - UX Designer - Data Scientist</h2>
+            <h3> 
+              I'm a JavaScript developer with commercial experience with Angluar 4, NodeJS and D3 data visualisation. Pervious projects that I have worked on 
+              include creating a charting micro-service, expanding the functionality of an existing CRUD API. 
+            </h3>
+            <h2> JavaScript Web Developer - NodeJS API Developer </h2>
           </div>
           <div id="porfileimg">
             <img className="circle" alt="Sam Williams" src="http://climbingstrengthtraining.com/wp-content/uploads/2017/01/samImg.jpg" />
@@ -23,7 +26,10 @@ export default class Layout extends React.Component {
             <li>HTML5</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Matlab</li>
+            <li>NodeJS API's</li>
+            <li>PostgreSQL</li>
+            <li>Mocha</li>
+            <li>D3 Data Visualisation</li>
           </ul>
         </div>
       </div>
