@@ -1,24 +1,31 @@
 import React from "react";
-import Nav from "../components/nav"
-import About from './about';
-import Projects from './projects';
-import Contact from './contact';
+import { BrowserRouter, Route } from "react-router-dom";
+
+import Nav from "../components/nav";
+import About from "./about";
+import Projects from "./projects";
+import Contact from "./contact";
+import Blog from "./blog";
 
 export default class Layout extends React.Component {
-
-
-
- render(){
-  return (
-    <div>
-      <Nav />
-      <div id="center-stripe">
+  render() {
+    const main = () => (
+      <div>
         <About />
         <Projects />
         <Contact />
       </div>
-    </div>
-
-   )
- }
+    );
+    return (
+      <div>
+        <BrowserRouter>
+          <div id="center-stripe">
+            <Nav />
+            <Route exact path="/" component={main} />
+            <Route exact path="/blog" component={Blog} />
+          </div>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }

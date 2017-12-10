@@ -1,8 +1,8 @@
-:root{
-  --p500: #5C6BC0;
+:root {
+  --p500: #5c6bc0;
   --p700: #303f9f;
   --p800: #283593;
-  --a700: #FFC400;
+  --a700: #ffc400;
 }
 
 #navbar {
@@ -37,7 +37,6 @@
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  
 }
 
 .menstrip {
@@ -48,32 +47,35 @@
   margin: 4px 0;
   opacity: 1;
   transform: rotate(0deg);
-  
+
   transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 #exp {
   width: 56px;
   height: 56px;
   right: 100px;
 }
-.exp1{
+.exp1 {
   top: 20px;
   transition-property: top;
-	transition-duration: .5s;
-	transition-timing-function: ease-out;}
-.exp2{top: 32px;}
-.exp3{
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.exp2 {
+  top: 32px;
+}
+.exp3 {
   top: 44px;
   transition-property: top;
-	transition-duration: .5s;
-	transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
-.toprotate{
+.toprotate {
   animation-name: rotateleft;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   top: 32px;
@@ -82,26 +84,30 @@
 @keyframes rotateleft {
   from {
     transform: rotate(0deg);
-  }to {
+  }
+  to {
     transform: rotate(45deg);
   }
 }
 @keyframes rotateright {
   from {
     transform: rotate(0deg);
-  }to {
+  }
+  to {
     transform: rotate(-45deg);
   }
 }
-.bottomrotate{
+.bottomrotate {
   animation-name: rotateright;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   top: 32px;
   transform: rotate(-45deg);
 }
-.fadeout{opacity: 0;}
+.fadeout {
+  opacity: 0;
+}
 
 #nav-links {
   display: -webkit-flex;
@@ -111,13 +117,12 @@
   justify-content: space-around;
   margin-right: 30px;
 }
-#nav-collapsed{
+#nav-collapsed {
   display: none;
   margin-right: 30px;
 }
 
-
-.nav-open{
+.nav-open {
   position: fixed;
   top: 80px;
   width: 100%;
@@ -127,20 +132,20 @@
   z-index: 1;
   align-items: center;
   overflow-y: hidden;
-	max-height: 240px; /* approximate max height */
+  max-height: 240px; /* approximate max height */
 
-	transition-property: max-height;
-	transition-duration: .5s;
-	transition-timing-function: ease-out;
+  transition-property: max-height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
-.close-box{
+.close-box {
   max-height: 0;
 }
 
 .anchor {
   position: relative;
   display: block;
-  top:-100px;
+  top: -100px;
 }
 
 #center-stripe {
@@ -153,7 +158,10 @@
   height: 1 0;
 }
 
-.about, .portfolio, .contact {
+.about,
+.portfolio,
+.contact,
+.blog {
   background: rgba(256, 256, 256, 0.9);
   position: relative;
   border-radius: 8px;
@@ -165,7 +173,9 @@
 .about {
   margin-top: 20px;
 }
-.portfolio{font-size: 16px;}
+.portfolio {
+  font-size: 16px;
+}
 
 .aboutText {
   width: 100%;
@@ -174,7 +184,7 @@
   flex-direction: column;
   text-align: center;
 }
-.about .twocols{
+.about .twocols {
   display: -webkit-flex;
   display: flex;
   align-items: center;
@@ -182,17 +192,16 @@
   flex-direction: row;
 }
 
-.circle{
+.circle {
   position: relative;
   border-radius: 50%;
   width: 30vw;
   height: 30vw;
 }
 
-
-
 @media screen and (max-width: 800px) {
-  .about .twocols, .portfolio .twocols {
+  .about .twocols,
+  .portfolio .twocols {
     flex-direction: column;
     justify-content: center;
   }
@@ -202,7 +211,7 @@
   #nav-collapsed {
     display: block;
   }
-  #siteTitle{
+  #siteTitle {
     font-size: 32px;
   }
   .circle {
@@ -221,7 +230,8 @@
   align-items: top;
   flex-flow: row;
 }
-.website {
+.website,
+.article {
   position: relative;
   background: white;
   margin: 5%;
@@ -230,17 +240,21 @@
   padding: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
+
+.article {
+  width: 100%;
+}
 .webpic {
   width: 100%;
   margin-bottom: 5%;
   border-radius: 10px;
 }
 #projs {
-  width:50%;
+  width: 50%;
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 800px) {
   #projs {
-    width:100%;
+    width: 100%;
   }
 }
