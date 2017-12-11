@@ -13,7 +13,8 @@ export default class Project extends React.Component {
           />
           <div className="caption text-center">
             <p className="p">
-              {this.props.title} {this.props.course ? this.props.course : ""}
+              <strong>{this.props.title} </strong>
+              {this.props.course ? this.props.course : ""}
             </p>
           </div>
         </a>

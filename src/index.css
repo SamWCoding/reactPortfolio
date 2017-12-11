@@ -28,7 +28,7 @@
 .menueBtn {
   margin: 8px;
   padding: 8px;
-  font-size: 24px;
+  font-size: 19px;
   align-content: center;
   background: var(--a700);
   border-radius: 8px;
@@ -243,7 +243,12 @@
 
 .article {
   width: 100%;
+  margin: 5% 0;
 }
+.content {
+  font-size: 18px;
+}
+
 .webpic {
   width: 100%;
   margin-bottom: 5%;
@@ -253,8 +258,25 @@
   width: 50%;
 }
 
+.p {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 800px) {
   #projs {
     width: 100%;
   }
+}
+
+img {
+  width: 100%;
+}
+
+.blackLink {
+  color: black;
+  text-decoration: inherit; /* no underline */
+}
+
+.blackLink:hover {
+  text-decoration: inherit; /* no underline */
 }

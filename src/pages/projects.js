@@ -4,7 +4,6 @@ import wikiview from "../pictures/wikiview.png";
 import mdPreview from "../pictures/mdPreview.png";
 import goalCoach from "../pictures/goalCoach.png";
 import reminderPro from "../pictures/ReminderPro.png";
-import simonGame from "../pictures/simonGame.png";
 
 import Project from "../components/project";
 
@@ -38,13 +37,13 @@ export default class Projects extends React.Component {
         link: "https://samwcoding.github.io/Projects/ReminderPro/build/",
         alt: "Reminder app",
         image: reminderPro,
-        title: "Reminder app "
-      },
-      {
-        link: "https://samwcoding.github.io/Projects/simonGame/",
-        alt: "Simon Memory game",
-        image: simonGame,
-        title: "Simon Memory Game"
+        title: "Reminder app",
+        course: (
+          <a href="https://www.udemy.com/node-with-react-fullstack-web-development">
+            {" "}
+            (course)
+          </a>
+        )
       }
     ];
 
@@ -54,6 +53,7 @@ export default class Projects extends React.Component {
         alt={proj.alt}
         image={proj.image}
         title={proj.title}
+        course={proj.course}
       />
     ));
 

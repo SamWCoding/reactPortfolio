@@ -16,8 +16,8 @@ export default class Blog extends Component {
         "http://public-api.wordpress.com/rest/v1/sites/samwcoding.wordpress.com/posts"
       )
       .then(res => {
+        console.log(res.data.posts);
         this.setState({ posts: res.data.posts });
-        console.log(this.state.posts);
       })
       .catch(error => console.log(error));
   }
@@ -25,10 +25,8 @@ export default class Blog extends Component {
   render() {
     return (
       <div className="blog">
-        <h1>Blog</h1>
-        <div>this is a post</div>
-        <ArticlePreview post={this.state.posts[1]} />
-        <div> this is a second thing</div>
+        <h1 className="sectionTitle">Articles</h1>
+        {this.state.posts.map(post => <ArticlePreview post={post} />)}
       </div>
     );
   }
